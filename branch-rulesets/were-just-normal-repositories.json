@@ -1,0 +1,47 @@
+{
+    "name": "team rules-ex-1",
+    "target": "branch",
+    "enforcement": "active",
+    "conditions": {
+        "ref_name": {
+            "include": [
+                "~DEFAULT_BRANCH",
+                "refs/heads/feature-*"
+            ],
+            "exclude": [
+                "refs/heads/dev-*"
+            ]
+        }
+    },
+   "rules": [
+        {
+            "type": "pull_request",
+            "parameters": {
+                "require_code_owner_review": false,
+                "require_last_push_approval": true,
+                "dismiss_stale_reviews_on_push": false,
+                "required_approving_review_count": 2,
+                "required_review_thread_resolution": false
+
+            }
+        },
+        {
+            "type": "required_status_checks",
+            "parameters": {
+                "required_status_checks": [
+                    {
+                        "context": `status check context name`",
+                        "integration_id": `integration ID that this status check must originate from.`
+                    }
+                ],
+                "strict_required_status_checks_policy": false
+            }
+        },
+        {
+            "type": "deletion"
+        },
+        {
+            "type": "non_fast_forward"
+        }
+    ]
+}
