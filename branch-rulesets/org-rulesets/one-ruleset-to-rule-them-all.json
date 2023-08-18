@@ -1,0 +1,47 @@
+#```POST /orgs/{org}/rulesets```
+
+{
+    "name": "👀 + 👀",
+    "target": "branch",
+    "source_type": "Organization",
+    "enforcement": "active",
+    "bypass_actors": [
+        {
+            "actor_id": 1,
+            "actor_type": "OrganizationAdmin",
+            "bypass_mode": "pull_request"
+        }
+    ],
+    "conditions": {
+        "repository_name": {
+            "exclude": [],
+            "include": [
+                "~ALL"
+            ]
+        },
+        "ref_name": {
+            "exclude": [],
+            "include": [
+                "~DEFAULT_BRANCH"
+            ]
+        }
+    },
+    "rules": [
+        {
+            "type": "deletion"
+        },
+        {
+            "type": "non_fast_forward"
+        },
+        {
+            "type": "pull_request",
+            "parameters": {
+                "require_code_owner_review": false,
+                "require_last_push_approval": false,
+                "dismiss_stale_reviews_on_push": false,
+                "required_approving_review_count": 2,
+                "required_review_thread_resolution": false
+            }
+        }
+    ]
+}
