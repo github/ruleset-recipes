@@ -1,0 +1,27 @@
+{
+    "name": "Prevent Tag Deletion",
+    "target": "tag",
+    "enforcement": "active",
+    "conditions": {
+        "repository_name": {
+            "exclude": [],
+            "include": [
+                "~ALL"
+            ]
+        },
+        "ref_name": {
+            "exclude": [],
+            "include": [
+                "~ALL"
+            ]
+        }
+    },
+    "rules": [
+        {
+            "type": "deletion"
+        },
+        {
+            "type": "non_fast_forward"
+        }
+    ]
+}
