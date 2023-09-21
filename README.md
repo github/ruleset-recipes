@@ -1,5 +1,5 @@
 # Ruleset recipes
-Quickstart your use of Repository Rules with prebuilt rulesets ready to import. 
+Quickstart your use of [Repository Rules](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets) with prebuilt rulesets ready to import. 
 
 ## What is a ruleset?
 
