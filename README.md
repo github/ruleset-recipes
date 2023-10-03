@@ -9,3 +9,4 @@ A ruleset is a named list of rules that applies to a repository. You can create 
 - [Branch protection best practices](https://github.com/github/ruleset-recipes/blob/a1f8e53ec12857637e8762e689a3abc255ff2c2f/branch-rulesets/were-just-normal-repositories.json)
 # Tag Rulesets
 - [Prevent Tag Deletions](https://github.com/github/ruleset-recipes/blob/a1f8e53ec12857637e8762e689a3abc255ff2c2f/tag-rulesets/prevent-tag-delete.json)
+- [Org ruleset requiring semantic versioning and prevents deletion for all tags](https://github.com/github/ruleset-recipes/blob/ac4b5ebc05219bb07de10f6094ad9ae8215bd39c/tag-rulesets/org-ruleset/tag-defaults.json)
