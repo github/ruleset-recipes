@@ -1,9 +1,7 @@
 {
-  "id": 99230,
   "name": "PRs & conventional commits",
   "target": "branch",
   "source_type": "Repository",
-  "source": "pkfirepkfire/ness",
   "enforcement": "active",
   "conditions": {
     "ref_name": {
