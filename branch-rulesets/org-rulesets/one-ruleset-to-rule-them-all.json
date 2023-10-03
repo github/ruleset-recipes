@@ -1,7 +1,5 @@
-#```POST /orgs/{org}/rulesets```
-
 {
-    "name": "👀 + 👀",
+    "name": "one ruleset to rule them all",
     "target": "branch",
     "source_type": "Organization",
     "enforcement": "active",
