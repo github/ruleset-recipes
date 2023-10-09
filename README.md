@@ -15,7 +15,7 @@ A ruleset is a named list of rules that applies to a repository. You can create 
  - Browse to your local clone of the ruleset-recipes you want to import
  - Review the imported ruleset and save your changes!
  - Success! 🎉
- - 
+
 ### Video Example
 ![Gif walking through the steps outline above to import a ruleset from a JSON file.](https://github.com/github/release-assets/assets/7575792/8806fa8c-b874-4a4e-97ef-4f8c238f4d29)
 
