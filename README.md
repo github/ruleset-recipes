@@ -9,7 +9,7 @@ A ruleset is a named list of rules that applies to a repository. You can create 
 1. Grab a copy of this repo
  - ⬆️ top click `< > Code`
  - Pick your favorite way to clone, like [GitHub CLI](https://cli.github.com/), or download the ZIP.    
-1. To get started, visit your favorite repository or organization you have admin access to.
+2. To get started, visit your favorite repository or organization you have admin access to.
  - Head to ⚙️Settings > Rules > Rulesets
  - Select New Ruleset > Import a ruleset
  - Browse to your local clone of the ruleset-recipes you want to import
