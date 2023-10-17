@@ -23,7 +23,7 @@ A ruleset is a named list of rules that applies to a repository. You can create 
 ## Branch Rulesets
 - [Branch protection best practices](https://github.com/github/ruleset-recipes/blob/a1f8e53ec12857637e8762e689a3abc255ff2c2f/branch-rulesets/were-just-normal-repositories.json)
 - [Require Pull Requests and conventional commits](https://github.com/github/ruleset-recipes/blob/8cd19a8e06e6e523fffd43e4a59a554c210dcbe2/branch-rulesets/PRs%20and%20commits.json)
-- [Organziation ruleset: One Rule to rule them all](https://github.com/github/ruleset-recipes/blob/8cd19a8e06e6e523fffd43e4a59a554c210dcbe2/branch-rulesets/org-rulesets/one-ruleset-to-rule-them-all.json)
+- [Organization ruleset: One Rule to rule them all](https://github.com/github/ruleset-recipes/blob/8cd19a8e06e6e523fffd43e4a59a554c210dcbe2/branch-rulesets/org-rulesets/one-ruleset-to-rule-them-all.json)
 ## Tag Rulesets
 - [Prevent Tag Deletions](https://github.com/github/ruleset-recipes/blob/a1f8e53ec12857637e8762e689a3abc255ff2c2f/tag-rulesets/prevent-tag-delete.json)
 - [Organization ruleset: requiring semantic versioning and prevents deletion for all tags](https://github.com/github/ruleset-recipes/blob/ac4b5ebc05219bb07de10f6094ad9ae8215bd39c/tag-rulesets/org-ruleset/tag-defaults.json)
