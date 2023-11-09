@@ -1,0 +1,68 @@
+{
+  "id": 193130,
+  "name": "Universe Demo",
+  "target": "branch",
+  "source_type": "Repository",
+  "source": "repo-rules-demo/dev-repo1",
+  "enforcement": "active",
+  "conditions": {
+    "ref_name": {
+      "exclude": [],
+      "include": [
+        "~DEFAULT_BRANCH",
+        "refs/heads/feature*",
+        "refs/heads/dev*"
+      ]
+    }
+  },
+  "rules": [
+    {
+      "type": "deletion"
+    },
+    {
+      "type": "non_fast_forward"
+    },
+    {
+      "type": "pull_request",
+      "parameters": {
+        "require_code_owner_review": false,
+        "require_last_push_approval": true,
+        "dismiss_stale_reviews_on_push": false,
+        "required_approving_review_count": 1,
+        "required_review_thread_resolution": false
+      }
+    },
+    {
+      "type": "required_status_checks",
+      "parameters": {
+        "required_status_checks": [
+          {
+            "context": "build",
+            "integration_id": 15368
+          },
+          {
+            "context": "lint",
+            "integration_id": 15368
+          }
+        ],
+        "strict_required_status_checks_policy": false
+      }
+    },
+    {
+      "type": "commit_message_pattern",
+      "parameters": {
+        "name": "",
+        "negate": false,
+        "pattern": "donut:",
+        "operator": "starts_with"
+      }
+    }
+  ],
+  "bypass_actors": [
+    {
+      "actor_id": 8862074,
+      "actor_type": "Team",
+      "bypass_mode": "always"
+    }
+  ]
+}

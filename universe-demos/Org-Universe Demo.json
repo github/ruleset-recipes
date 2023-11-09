@@ -1,0 +1,70 @@
+{
+  "id": 193155,
+  "name": "Universe Demo",
+  "target": "branch",
+  "source_type": "Organization",
+  "source": "repo-rules-demo",
+  "enforcement": "active",
+  "conditions": {
+    "ref_name": {
+      "exclude": [],
+      "include": [
+        "~DEFAULT_BRANCH",
+        "refs/heads/feature*",
+        "refs/heads/dev*"
+      ]
+    },
+    "repository_name": {
+      "exclude": [],
+      "include": [
+        "~ALL"
+      ]
+    }
+  },
+  "rules": [
+    {
+      "type": "deletion"
+    },
+    {
+      "type": "non_fast_forward"
+    },
+    {
+      "type": "pull_request",
+      "parameters": {
+        "require_code_owner_review": false,
+        "require_last_push_approval": true,
+        "dismiss_stale_reviews_on_push": false,
+        "required_approving_review_count": 1,
+        "required_review_thread_resolution": false
+      }
+    },
+    {
+      "type": "commit_message_pattern",
+      "parameters": {
+        "name": "",
+        "negate": false,
+        "pattern": "donut:",
+        "operator": "starts_with"
+      }
+    },
+    {
+      "type": "workflows",
+      "parameters": {
+        "workflows": [
+          {
+            "ref": "main",
+            "path": ".github/workflows/default.yml",
+            "repository_id": 710933099
+          }
+        ]
+      }
+    }
+  ],
+  "bypass_actors": [
+    {
+      "actor_id": 8862074,
+      "actor_type": "Team",
+      "bypass_mode": "always"
+    }
+  ]
+}
