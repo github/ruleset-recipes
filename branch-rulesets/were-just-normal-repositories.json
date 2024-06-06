@@ -30,7 +30,7 @@
             "parameters": {
                 "required_status_checks": [
                     {
-                        "context": "`status check context name`",
+                        "context": "status check context name",
                         "integration_id": `integration ID that this status check must originate from.`
                     }
                 ],
