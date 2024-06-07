@@ -31,7 +31,7 @@
                 "required_status_checks": [
                     {
                         "context": "status check context name",
-                        "integration_id": `integration ID that this status check must originate from.`
+                        "integration_id": integration ID that this status check must originate from.
                     }
                 ],
                 "strict_required_status_checks_policy": false
