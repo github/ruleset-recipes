@@ -10,8 +10,7 @@
       "exclude": [],
       "include": [
         "~DEFAULT_BRANCH",
-        "refs/heads/feature*",
-        "refs/heads/dev*"
+        "refs/heads/main*"
       ]
     }
   },
@@ -20,15 +19,12 @@
       "type": "deletion"
     },
     {
-      "type": "non_fast_forward"
-    },
-    {
       "type": "pull_request",
       "parameters": {
         "require_code_owner_review": false,
         "require_last_push_approval": true,
         "dismiss_stale_reviews_on_push": false,
-        "required_approving_review_count": 1,
+        "required_approving_review_count": 0,
         "required_review_thread_resolution": false
       }
     },
@@ -61,7 +57,7 @@
   "bypass_actors": [
     {
       "actor_id": 8862074,
-      "actor_type": "Team",
+      "actor_type": "user:andreanadr",
       "bypass_mode": "always"
     }
   ]
