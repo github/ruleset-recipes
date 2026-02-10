@@ -1,27 +1,31 @@
 {
-    "name": "Prevent Tag Deletion",
-    "target": "tag",
-    "enforcement": "active",
-    "conditions": {
-        "repository_name": {
-            "exclude": [],
-            "include": [
-                "~ALL"
-            ]
-        },
-        "ref_name": {
-            "exclude": [],
-            "include": [
-                "~ALL"
-            ]
-        }
+  "id": 12633899,
+  "name": "Prevent Tag Deletion",
+  "target": "tag",
+  "source_type": "Organization",
+  "source": "Litemore-Limited",
+  "enforcement": "active",
+  "conditions": {
+    "repository_name": {
+      "exclude": [],
+      "include": [
+        "~ALL"
+      ]
     },
-    "rules": [
-        {
-            "type": "deletion"
-        },
-        {
-            "type": "non_fast_forward"
-        }
-    ]
+    "ref_name": {
+      "exclude": [],
+      "include": [
+        "~ALL"
+      ]
+    }
+  },
+  "rules": [
+    {
+      "type": "deletion"
+    },
+    {
+      "type": "non_fast_forward"
+    }
+  ],
+  "bypass_actors": []
 }

@@ -1,17 +1,19 @@
 {
-  "name": "Org-pushrule-example",
+  "id": 12633575,
+  "name": "Org-Push-Rule",
   "target": "push",
   "source_type": "Organization",
+  "source": "Litemore-Limited",
   "enforcement": "active",
   "conditions": {
     "repository_property": {
       "exclude": [],
       "include": [
         {
-          "name": "sensitivity",
-          "source": "custom",
+          "name": "visibility",
+          "source": "system",
           "property_values": [
-            "high"
+            "private"
           ]
         }
       ]
@@ -51,11 +53,6 @@
     {
       "actor_id": null,
       "actor_type": "OrganizationAdmin",
-      "bypass_mode": "always"
-    },
-    {
-      "actor_id": 29110,
-      "actor_type": "Integration",
       "bypass_mode": "always"
     }
   ]
